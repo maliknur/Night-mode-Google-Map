@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Custom Night mode Google Map</title>
+
+    <!-- GOOGLE MAP API  -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&style=invert_lightness:true"></script>
+    <!-- CUSTOM GOOGLE MAP JS -->
+    <script src="map.js"></script>
+  
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  
+  <body>
+  
+  <div>
+  <!-- INPUT FORM FOR LOCATION ENTRY -->
+    <div id="board" class="board">
+        <h4>Please enter:</h4> 
+          <form onchange="calcRoute();">
+            <input class="form-control" type="text" id="start" placeholder="start destination">
+            <input class="form-control" type="text" id="end" placeholder="end destination">
+          </form>
+    </div>
+
+    <!-- DISPLAY ROUTE DIRECTIONS -->
+   <div id="directions-board"></div>
+  </div>
+  
+  <!-- MAP DISPLAY -->
+  <div id="map-canvas"></div>
+     
+  </body>
+</html>

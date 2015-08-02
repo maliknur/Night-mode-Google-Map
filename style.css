@@ -1,0 +1,69 @@
+html, body, #map-canvas {
+        background: #000;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      #board {
+      
+        margin-top: 10px;
+        margin-bottom: 10px;
+        z-index: 5;
+        background-color: #000;
+        padding: 5px;
+        color: yellow;
+      }
+
+      #board, .board {
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+        float: right;
+      }
+
+      #board form, form input{
+        display: inline;
+        margin-top: 10px;
+      }
+
+      #board form input {
+        background: #000;
+        color: yellow;
+      }
+
+      #board select, #board input, .board select, .board input {
+        font-size: 15px;
+      }
+
+      #board select, .board select {
+        width: 100%;
+      }
+
+      #board i, .board i {
+        font-size: 12px;
+      }
+
+       #directions-board {
+        background: #000;
+        
+        float: right;
+        width: 300px;
+        overflow: auto;
+      }
+
+      .adp-summary, .adp-substep, .adp-text, .adp-marker{
+        background: #000;
+        color: #fff;
+
+      }
+      .adp-placemark{
+        border:none;
+        background: #000;
+      }
+      .adp-text{
+        padding-left: 20px;
+      }
+      .adp-turn-right, .adp-turn-left, .adp-keep-right, .adp-keep-left, .adp-ramp-right, .adp-ramp-left, .adp-merge, .adp-fork-right, .adp-fork-left, .adp-straight {
+        background: yellow;
+      }
